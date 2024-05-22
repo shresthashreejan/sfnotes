@@ -1,0 +1,19 @@
+- Formula fields allow inserting references to fields from a parent object. Fields of objects that are up to 10 relationships away can be referenced in a formula field of a current object.
+- Roll-up summary fields aggregate values from child records on the parent record.
+- The sharing setting that is available in the Master-Detail Options of a junction object determines whether a user has edit, create, and delete access to the junction object records based on the level of access the user has on both master objects.
+- If users only have 'read' access to the master objects, then 'Read Only' option should be selected to allow them to perform CRUD operations on the junction object.
+- 'Read' is not a valid value for the junction object.
+- A formula field can return an image by using the IMAGE function.
+- A formula field can return a link with the session Id as a parameter by using the HYPERLINK and GETSESSIONID functions.
+- Formula fields do not support Long/Rich/Encrypted Text Area fields.
+- Custom formula fields are not available in Connect Offline, Web-to-Lead forms or Web-to-Case forms.
+- The detail object in a master-detail relationship inherits the sharing settings of the master object.
+- Objects in lookup relationships are loosely coupled and have independent sharing settings.
+- Lookup and master-detail relationships are not available on the User object.
+- The User object can only be linked with itself, which is possible by using a hierarchical relationship.
+- The Data Import Wizard will allow importing of selected standard objects and all custom objects.
+- If more than 50000 records need to be processed in a single transaction, then Data Loader can be used.
+- Basic Data Import can be turned on in Salesforce Setup to give users access to a guided process for importing data using a CSV file and a simple data-mapping interface.
+- Basic Data Import is supported for Enterprise, Performance, Unlimited editions of Salesforce.
+- An External Id field can be used to associate records instead of the usual Record Id. While relating records using this approach, the child object must have an existing relationship field to the parent object such as a lookup or master-detail relationship. This relationship field is where the parent record reference is added and establishes the association between the two records.
+- External Id is only necessary at the parent object.
