@@ -17,3 +17,9 @@
 - Basic Data Import is supported for Enterprise, Performance, Unlimited editions of Salesforce.
 - An External Id field can be used to associate records instead of the usual Record Id. While relating records using this approach, the child object must have an existing relationship field to the parent object such as a lookup or master-detail relationship. This relationship field is where the parent record reference is added and establishes the association between the two records.
 - External Id is only necessary at the parent object.
+- A roll-up summary field can be created on any object on the master side of a master-detail relationship.
+- Some exceptions where roll-up summary fields can be used in a lookup relationship are: Opportunity-Opportunity Product, Account-Opportunity, and Campaign-Campaign Member.
+- Salesforce does not allow cross-object formula fields or formula fields that reference fields from another object, to be used in roll-up summary fields.
+- Owner field on detail side is automatically set to the owner of the master record. So, detail side cannot have queues.
+- Indirect lookup relationship links a child external object to a parent standard or custom object.
+- External lookup relationship links a child salesforce object to a parent external object.
