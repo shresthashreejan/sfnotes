@@ -23,3 +23,11 @@
 - Owner field on detail side is automatically set to the owner of the master record. So, detail side cannot have queues.
 - Indirect lookup relationship links a child external object to a parent standard or custom object.
 - External lookup relationship links a child salesforce object to a parent external object.
+- A junction object is required to establish a many-to-many relationship.
+- Schema Builder has limitations such as being unable to add newly created fields to page layouts, configure field-level security settings, create Geolocation custom fields etc.
+- An image (stored in documents) can be displayed conditionally using a formula field using the IMAGE() function.
+- The isFormulaTreatNullNumberAsZero() method of the DescribeFieldResult class returns true if null is treated as zero in a formula field, and false otherwise.
+- Cross-object formula fields can reference field values from related parent records.
+- Data from a record can be visible to the user through cross-object formula fields even if the user does not have access to the record.
+- Formula fields can reference field values from related parent objects that are up to 10 relationships away.
+- Formula fields cannot reference values from child records.

@@ -1,0 +1,18 @@
+- A static method, which can be used as a utility method, is called without instantiating the class it is defined in.
+- If a limit is set on the entire query, results are evenly distributed among the objects returned.
+- Limits can be set per individual object.
+- Unlike process Builder, workflow rules do not have the capability to submit records for approval or update child records.
+- Workflow rules and processes are both capable of creating task records at multiple intervals.
+- SOQL does not support the wild card character, or asterisk '*', unlike SQL.
+- The GROUP BY clause can be used together with the COUNT(fieldName) aggregate function to return data that groups and counts the number of records based on a field value.
+- To specify the maximum stack depth of a queuable job, the MaximumQueueableStackDepth property of the AsyncOptions class can be used. Setting the property overrides the default stack depth limit of certain orgs such as Developer and Trial Edition orgs.
+- The second parameter of the System.enqueueJob method is used for specifying a delay (Integer) or options (AsyncOptions).
+- Outbound messaging uses the notifications() call to send SOAP messages over HTTP(S) to a designated endpoint. A record-triggered flow can trigger an outbound message using a core action.
+- The second parameter of the Database.insert(param, param) method is an optional 'allOrNone' parameter.
+- Inner classes can only be one level deep. If the access modifier is not specified for an inner class, it is considered private.
+- The 'Allow Approvals' in Chatter settings enable approvers to receive approval request notifications via Chatter.
+- The RETURNING clause is an optional clause that can be used in SOSL queries to specify the information that should be returned in the search result.
+- An Enum is an abstract data type used to contain a predefined set of finite values or identifiers that cannot be modified at runtime.
+- The % and _ wildcards are supported for the LIKE operator. The % wildcard matches zero or more characters. The _ wildcard matches exactly one character.
+- To retrieve the latitude and longitude values of a geolocation field in SOQL, the suffixes -__Latitude__s' and '__Longitude__s' are appended to the API name without the '__c' of the custom field. For example: SELECT Id, Name, Location__Latitude__s, Location__Longitude__s FROM Conference__c.
+- By default, Apex code in classes, triggers, or web services runs in system mode where the permissions and record sharing of the current user are not taken into account. Server-side Lightning component controllers or @AuraEnabled classes, implicitly use 'with sharing' if no sharing keyword is defined on the class. This means that record-level security is enforced by default in custom Lightning components.
