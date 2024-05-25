@@ -16,3 +16,5 @@
 - The % and _ wildcards are supported for the LIKE operator. The % wildcard matches zero or more characters. The _ wildcard matches exactly one character.
 - To retrieve the latitude and longitude values of a geolocation field in SOQL, the suffixes -__Latitude__s' and '__Longitude__s' are appended to the API name without the '__c' of the custom field. For example: SELECT Id, Name, Location__Latitude__s, Location__Longitude__s FROM Conference__c.
 - By default, Apex code in classes, triggers, or web services runs in system mode where the permissions and record sharing of the current user are not taken into account. Server-side Lightning component controllers or @AuraEnabled classes, implicitly use 'with sharing' if no sharing keyword is defined on the class. This means that record-level security is enforced by default in custom Lightning components.
+- An access modifier is not required in the declaration of an inner class.
+- Definition modifiers (such as virtual, abstract) are optional.
