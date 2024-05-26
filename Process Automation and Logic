@@ -8,6 +8,7 @@
 - To specify the maximum stack depth of a queuable job, the MaximumQueueableStackDepth property of the AsyncOptions class can be used. Setting the property overrides the default stack depth limit of certain orgs such as Developer and Trial Edition orgs.
 - The second parameter of the System.enqueueJob method is used for specifying a delay (Integer) or options (AsyncOptions).
 - Outbound messaging uses the notifications() call to send SOAP messages over HTTP(S) to a designated endpoint. A record-triggered flow can trigger an outbound message using a core action.
+- Unlike Flow Builder, Process Builder does not support sending outbound messages.
 - The second parameter of the Database.insert(param, param) method is an optional 'allOrNone' parameter.
 - Inner classes can only be one level deep. If the access modifier is not specified for an inner class, it is considered private.
 - The 'Allow Approvals' in Chatter settings enable approvers to receive approval request notifications via Chatter.
@@ -18,3 +19,27 @@
 - By default, Apex code in classes, triggers, or web services runs in system mode where the permissions and record sharing of the current user are not taken into account. Server-side Lightning component controllers or @AuraEnabled classes, implicitly use 'with sharing' if no sharing keyword is defined on the class. This means that record-level security is enforced by default in custom Lightning components.
 - An access modifier is not required in the declaration of an inner class.
 - Definition modifiers (such as virtual, abstract) are optional.
+- Escalation rules are used for automated escalation of cases upon meeting a certain criteria.
+- Assignment rules are used for automatically assigning a case or lead to an owner.
+- Approval requests can be sent to individual users or a queue.
+- Profile and Record Type are standard objects that do not support DML operations.
+- Salesforce only restores lookup relationships that have not been replaced.
+- Undelete can restore opportunity-quote associations.
+- A custom email handler can be defined to handle inbound emails and perform operations such as creating or updating records based on the email content.
+- Email-to-Case creates a new case from an email sent to a specific address.
+- Process Builder cannot process an incoming email.
+- The default sharing settings for Apex classes is 'without sharing'.
+- Inner classes do not inherit the sharing setting of their container class.
+- Salesforce enforces a DML limit of 150 statements per Apex transaction.
+- The <apex:pageMessages> component is used to display all messages that are generated for all components on the current page including error messages.
+- NoAccessException will be thrown when an unauthorized user attempts to access a secured record.
+- Generic Exception can be used to handle almost all Exception types.
+- If multiple triggers are used to handle the different event types for the same sObject, there is no control over the order in which the triggers are fired when a single transaction invokes different event types.
+- Trigger.old is always read-only.
+- Trigger.new cannot be deleted.
+- In a 'before update' trigger, before the DML operation is committed, field values can be changed using the 'trigger.new' context variable.
+- Partial processing returns the results of an insert or update operation in an array of Database.SaveResult objects.
+- Failed or succeeded records can be determined by looping through the array of Database.SaveResult object and using the isSuccess method.
+- Upto 2 levels of relationships are allowed in a parent-to-child relationship query. However, when using SOAP or REST to perform SOQL queries on objects, upto 5 levels of relationships can be specified.
+- Upto 5 levels of relationships are allowed in a child-to-parent relationship query.
+- Apex class must implement the 'Iterator' interface to use a custom iterator, which contains two methods 'hasNext' and 'next'.
