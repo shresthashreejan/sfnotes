@@ -43,3 +43,5 @@
 - Upto 2 levels of relationships are allowed in a parent-to-child relationship query. However, when using SOAP or REST to perform SOQL queries on objects, upto 5 levels of relationships can be specified.
 - Upto 5 levels of relationships are allowed in a child-to-parent relationship query.
 - Apex class must implement the 'Iterator' interface to use a custom iterator, which contains two methods 'hasNext' and 'next'.
+- Future method can only return void and does not support other return types.
+- Future method cannot invoke another future method.
