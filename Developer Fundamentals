@@ -3,7 +3,6 @@
 - The sharing setting that is available in the Master-Detail Options of a junction object determines whether a user has edit, create, and delete access to the junction object records based on the level of access the user has on both master objects.
 - If users only have 'read' access to the master objects, then 'Read Only' option should be selected to allow them to perform CRUD operations on the junction object.
 - 'Read' is not a valid value for the junction object.
-- A formula field can return an image by using the IMAGE function.
 - A formula field can return a link with the session Id as a parameter by using the HYPERLINK and GETSESSIONID functions.
 - Formula fields do not support Long/Rich/Encrypted Text Area fields.
 - Custom formula fields are not available in Connect Offline, Web-to-Lead forms or Web-to-Case forms.
@@ -31,3 +30,4 @@
 - Data from a record can be visible to the user through cross-object formula fields even if the user does not have access to the record.
 - Formula fields can reference field values from related parent objects that are up to 10 relationships away.
 - Formula fields cannot reference values from child records.
+- The file field type cannot be converted into other data types.

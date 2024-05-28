@@ -45,3 +45,10 @@
 - Apex class must implement the 'Iterator' interface to use a custom iterator, which contains two methods 'hasNext' and 'next'.
 - Future method can only return void and does not support other return types.
 - Future method cannot invoke another future method.
+- Apex triggers can be activated or deactivated. The 'Active' checkbox available while editing a trigger can be used to turn the trigger on or off in a sandbox environment. The deactivated trigger can be deployed to production to disable the trigger in production.
+- Triggers cannot be used to detect a 'before undelete' event. 'after undelete' is supported.
+- The number of SOQL queries allowed in a synchronous transaction is up to 100 only.
+- SOSL statements evaluate to a list of lists of sObjects. Each list contains the search results for a particular sObject type.
+- Governor limits thrown exceptions cannot be handled.
+- Custom exceptions can be top level classes, and supports variables, methods, and constructors.
+- Execution of post-commit logic, such as sending emails will happen after all DML operations are committed to the database.
