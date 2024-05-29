@@ -52,3 +52,17 @@
 - Governor limits thrown exceptions cannot be handled.
 - Custom exceptions can be top level classes, and supports variables, methods, and constructors.
 - Execution of post-commit logic, such as sending emails will happen after all DML operations are committed to the database.
+- Trigger.new contains a list of the new versions of sObject records that is available in insert, update, and undelete triggers.
+- Salesforce does not allow callouts to be made after DML operations in the same transaction. Doing so will throw the "You have uncommitted work pending" callout exception. To allow the callout to be made, DML operations first need to be rolled back using the Database.rollback() method, and second, the savepoint needs to be explicitly released using the Database.releaseSavepoint() method.
+- If the callout needs to be made after the DML operation and avoid losing work, the recommended solution is to perform the callout in a separate transaction using asynchronous methods such as a future method.
+- getMessage() returns the error message that is displayed to the user.
+- getCause() returns the cause of exception as an Exception object.
+- getStackTraceString() is used to return the stack trace as a string.
+- getTypeName() method returns the exception type, such as DmlException, ListException, MathException, and so on.
+- HTTP callout action in flow builder can be used to perform callouts declaratively.
+- 'continue' keyword is used to skip the current iteration of a loop.
+- 'break' keyword is used to exit the entire loop.
+- SOQL for loops can be used to avoid the limit on heap size.
+- Declaring a constant variable requires using the 'final' keyword.
+- Semicolon and comma characters can be used to add filter logic when querying multi-select picklist fields. A semicolon is used as a special character to implement AND logic. A comma is used as a special character to implement OR logic.
+- 'Section' screen component can be used to create multi-column collapsible sections in a flow screen.
