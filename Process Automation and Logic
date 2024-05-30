@@ -66,3 +66,16 @@
 - Declaring a constant variable requires using the 'final' keyword.
 - Semicolon and comma characters can be used to add filter logic when querying multi-select picklist fields. A semicolon is used as a special character to implement AND logic. A comma is used as a special character to implement OR logic.
 - 'Section' screen component can be used to create multi-column collapsible sections in a flow screen.
+- Null coalescing operator (??) operates in the syntax <left-hand argument> ?? <right-hand argument>. It returns right-hand argument whenever left-hand argument returns null.
+- Two types of custom settings are hierarchy and list. List custom setting data provides a list of data that can be reused and accessed by different tools across an org. Hierarchy custom setting data uses a hierarchical logic and allows settings to be customized specifically to a profile or user.
+- Custom settings data is exposed in the application cache, which avoids repeated queries to the database.
+- Hierarchy custom settings can be accessed in Apex using Custom Settings methods or in formula fields, validation rules, flows, and processes using the $Setup variable.
+- List custom settings can only be accessed in Apex or through API calls.
+- Salesforce no longer recommends using List custom settings, Custom metadata types are preferred since, unlike custom settings, custom metadata types can be migrated to other orgs using packages or Metadata API tools.
+- SOQL statement can be used to either return a single record, a list of records or an integer (when COUNT method is used).
+- An object's field values can be populated programmatically using the Trigger.new context variable for "before" triggers.
+- A variable defined in the for-loop can be implicitly converted using the rules of conversion. (an integer can be implicitly converted into a double).
+- Limits.getDMLRows() returns the number of records that have been processed using any DML statement that counts against the DML limits.
+- Limits.getLimitDMLRows() returns the actual DML rows limit.
+- Limits.getLimitDMLStatements() returns the number of DML operations that can be called in a single transaction.
+- Salesforce allows creating tests in flow builder specifically for record-triggered flows. 'View Tests' button is used to manage flow tests.
