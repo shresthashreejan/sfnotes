@@ -79,3 +79,8 @@
 - Limits.getLimitDMLRows() returns the actual DML rows limit.
 - Limits.getLimitDMLStatements() returns the number of DML operations that can be called in a single transaction.
 - Salesforce allows creating tests in flow builder specifically for record-triggered flows. 'View Tests' button is used to manage flow tests.
+- In Apex, currency fields are automatically assigned the type Decimal.
+- Invocable methods support using the generic sObject type as an output parameter as well as an input parameter.
+- A flow can be set to run in a system context without sharing.
+- The only formula functions that work with Geolocation are ISBLANK, ISCHANGED, and ISNULL. Also, equality or comparison operators can't be used with geolocations.
+- When implementing a List iteration using a SOQL for-loop, records are automatically processes in batches of 200 and avoid exceeding the heap size limit (6MB).
