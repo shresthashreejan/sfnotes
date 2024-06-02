@@ -84,3 +84,4 @@
 - A flow can be set to run in a system context without sharing.
 - The only formula functions that work with Geolocation are ISBLANK, ISCHANGED, and ISNULL. Also, equality or comparison operators can't be used with geolocations.
 - When implementing a List iteration using a SOQL for-loop, records are automatically processes in batches of 200 and avoid exceeding the heap size limit (6MB).
+- The 'Run flow as another user' option available in 'Debug Flow' menu in flow builder allows executing an action or performing CRUD operation on a record as a specific user.
