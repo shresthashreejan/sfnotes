@@ -83,5 +83,9 @@
 - Invocable methods support using the generic sObject type as an output parameter as well as an input parameter.
 - A flow can be set to run in a system context without sharing.
 - The only formula functions that work with Geolocation are ISBLANK, ISCHANGED, and ISNULL. Also, equality or comparison operators can't be used with geolocations.
-- When implementing a List iteration using a SOQL for-loop, records are automatically processes in batches of 200 and avoid exceeding the heap size limit (6MB).
+- When implementing a List iteration using a SOQL for-loop, records are automatically processed in batches of 200 and avoid exceeding the heap size limit (6MB).
 - The 'Run flow as another user' option available in 'Debug Flow' menu in flow builder allows executing an action or performing CRUD operation on a record as a specific user.
+- In addition to DML statements such as insert, update, upsert, delete, undelete and merge, other method calls such as AApproval.process(), Database.convertLead(), Database.emptyRecycleBin(), Database.rollback(). Database.setSavePoint(), EventBus.publish(), and System.runAs() also count toward the governor limit of the total number of DML statements that can be issued in a single transaction.
+- A platform event-triggered flow created in flow builder can subscribe to a specific platform event. When a platform event message is published, it invokes the flow, which can perform the necessary record updates based on the event message data available in the $Record global variable.
+- Salesforce allows adding a scheduled delay to a queuable job using the System.enqueueJob() method. The delay value in minutes (min 0, max 10) can be passed as the second parameter.
+- Org-wide default delay for all queuable jobs can be set in Setup > Apex Settings. Using System.enqueueJob() to delay a job overrides the org-wide default delay for the job.
