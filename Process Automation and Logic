@@ -89,3 +89,11 @@
 - A platform event-triggered flow created in flow builder can subscribe to a specific platform event. When a platform event message is published, it invokes the flow, which can perform the necessary record updates based on the event message data available in the $Record global variable.
 - Salesforce allows adding a scheduled delay to a queuable job using the System.enqueueJob() method. The delay value in minutes (min 0, max 10) can be passed as the second parameter.
 - Org-wide default delay for all queuable jobs can be set in Setup > Apex Settings. Using System.enqueueJob() to delay a job overrides the org-wide default delay for the job.
+- Flow builder can be used to create a flow that executes an action type called 'Send Survey Information'. It can automatically email survey invitations to leads, contacts, or users.
+- addAll() method is used to add a list to a list collection.
+- The @JsonAccess annotation can be used for an Apex class to determine in which context it is allowed to be serialized or deserialized. For example: @JsonAccess(serializable='never' deserializable='always').
+- An 'after update' trigger cannot change field values on the record that triggered it. Field values on related records can be updated.
+- The maximum stack depth for triggers in Salesforce is 16.
+- Address fields on standard objects are compound data types and cannot be directly modified. Instead, each individual component of the Address field must be modified.
+- A SOSL query returns List<List<sObject>>.
+- $Record_Prior global variable in flow builder can be used to access previous field values of the updated record.
