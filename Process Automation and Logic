@@ -98,7 +98,7 @@
 - A SOSL query returns List<List<sObject>>.
 - $Record_Prior global variable in flow builder can be used to access previous field values of the updated record.
 - Trigger.new records can only be edited in 'before' triggers. A FinalException will occur if Trigger.new records are edited in 'after' triggers.
-- An Apex web service (REST ir SOAP-based) is created when an external system beeds to communicate and perform operations in Salesforce (inbound communication).
+- An Apex web service (REST or SOAP-based) is created when an external system beeds to communicate and perform operations in Salesforce (inbound communication).
 - External applications can subscribe to platform event using the Pub/Sub API, which uses the gRPC (Google Remote Procedural Call) framework for performing cross-platform high performance communication. An alternative subscription method is via CometD, which is a routing bus that performs long polling to receive platform event messages from Salesforce. In long polling, the external application connects and requests the information from Salesforce, and if no information is available yet, Salesforce holds the request and waits until a platform event is fired.
 - Flow Trigger Explorer helps in identifying which record-triggered flows are run when a record of a specific object is created, updated, or deleted.
 - Flow Trigger Explorer allows sorting of the execution order of the flows via drag-and-drop options and automatically updates the 'Trigger Order' property value of each record-triggered flow.
@@ -106,3 +106,10 @@
 - Dot notation is used to reference fields from parent objects in SOQL.
 - Nested SELECT statement is used to query child records.
 - The switch control flow statement is capable of handling multiple values in its when block as well as enum values.
+- Create a Case is a prebuilt flow named Create a Case that can be customized based on the requirements and saved as a new flow.
+- The delete DML statement will only count as 1 towards the governor limit of DML statements regardless of the number of records contained in the list.
+- The FIELDS function in SOQL can be used to select fields without specifying the field names of the target sObject.
+- A part of a record-triggered flow can be run at a dynamically scheduled time after the tiggering event occurs by adding a scheduled path to the flow.
+- A failed flow interview is not saved if the error came from a flow that is inactive, a platform event-triggered flow, from a managed package (and is not a template), or from an Apex test method.
+- The getQueryRows() method of the Limits class returns the number of rows that have been returned by SOQL queries.
+- The lightning/empApi module, which contains empApi methods, can be imported via the component's JavaScript controller to allow the Lightning web component to subscribe to platform events.
