@@ -113,3 +113,11 @@
 - A failed flow interview is not saved if the error came from a flow that is inactive, a platform event-triggered flow, from a managed package (and is not a template), or from an Apex test method.
 - The getQueryRows() method of the Limits class returns the number of rows that have been returned by SOQL queries.
 - The lightning/empApi module, which contains empApi methods, can be imported via the component's JavaScript controller to allow the Lightning web component to subscribe to platform events.
+- The DML undelete statement is used to restore deleted records from the recycle bin.
+- The 'Trigger Order' property is available in the advanced properties of a record-triggered flow, which can be used to specify when the flow is executed in a transaction that involves other flows.
+- Flows with the same 'Trigger Order' values are executed based on their API names in alphabetical order.
+- The Trigger.operationType is a trigger variable that returns the context of the executing DML operation. The available context values are BEFORE_INSERT, BEFORE_UPDATE, BEFORE_DELETE, AFTER_INSERT, AFTER_UPDATE, AFTER_DELETE, and AFTER_UNDELETE.
+- Event object types end with the suffix '__e'.
+- Platform events only support 'after insert' triggers.
+- SOQL queries return DateTime fields as Coordinated Universal Time (UTC) values.
+- Date or DateTime values in queries are not enclosed in quotes.
