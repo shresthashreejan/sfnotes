@@ -1,0 +1,9 @@
+- Although loading files via <script> tags are allowed in Visualforce pages, Salesforce recommends uploading the js files, or file archives, as static resources, and then referencing them using <apex:includescript> tags.
+- <apex:include> tag is used for inserting a full Visualforce page into another page.
+- Setter method pass user specified values from page markup to a controller.
+- Rendering a dynamic number of records in a standard list controller is accomplished by setting the {!PageSize} with an element that can set variables, such as an <apex:selectList>.
+- Existing list view filters can be applied to standard list controllers using the {!listviewOptions} and {!filterId} variables.
+- Unlike standard controllers, custom controllers run in system mode by default, unless the 'with sharing' keywords are specified.
+- The supported action methods in a standard controller are Save, QuickSave, Edit, Delete, Cancel and List.
+- A CSS stylesheet can be referenced in Visualforce pages by using the <apex:stylesheet> component.
+- The <apex:relatedList> tag will automatically generate a list of related records by specifying the relationship name in its list attribute. Example: <apex:relatedList list='Contacts'/>

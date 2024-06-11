@@ -121,3 +121,18 @@
 - Platform events only support 'after insert' triggers.
 - SOQL queries return DateTime fields as Coordinated Universal Time (UTC) values.
 - Date or DateTime values in queries are not enclosed in quotes.
+- Virtual classes cannot contain abstract methods.
+- Abstract classes are allowed to contain virtual methods.
+- A virtual method contains a body and can be overridden by an extending class. However, an abstract method only contains a signature and has no body, as it is up to the extending class to provide the body for the method.
+- Governor limit exceptions cannot be handled.
+- Custom exception classes can be defined as virtual classes so that they can be extended by another custom exception class.
+- The protected access modifier enables a method to be visible to inner classes of the Apex class it is defined in as well as extensions of the class.
+- Protected access modifier cannot be used on static methods and is only allowed on instance methods and member variables.
+- A method or variable is private if an access modifier is not specified.
+- Flow builder, process builder as well as the REST API provide the capability to send custom notifications.
+- There are two ways to invoke a flow from apex: Flow.Interview.FlowName(params).start(); and Flow.Interview.createInterview('FlowName', params).start(); Parameters are contained in a Map<String, Object>.
+- Flow can access and update external object data as well as Salesforce data.
+- The DML merge operation can only process up to three records at a time.
+- 'Uncommitted work pending' error is thrown when a callout is executed after a DML operation in a single transaction. Screen flows can be used to work around this limitation by executing the callout in a new transaction.
+- 'callout=true' attribute in the invocable method annotation is used to make the flow aware that the method contains a callout.
+- Configuring the flow to always start a new transaction would also avoid the 'uncommitted work pending' error.
