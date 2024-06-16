@@ -7,3 +7,20 @@
 - The supported action methods in a standard controller are Save, QuickSave, Edit, Delete, Cancel and List.
 - A CSS stylesheet can be referenced in Visualforce pages by using the <apex:stylesheet> component.
 - The <apex:relatedList> tag will automatically generate a list of related records by specifying the relationship name in its list attribute. Example: <apex:relatedList list='Contacts'/>
+- The getCompleteResult() method can be used to determine whether there are more records than the maximum record limit, which is 10000 records. It returns false if the controller won't be able to process all the returned records.
+- In order to add a Visualforce page to an object's page layout, the object's standard controller must be used.
+- In order to execute custom operations using Apex on Visualforce page with a standard controller, a controller extension must be used. The constructor of the controller extension must accept the standard controller object as a parameter, which is of type ApexPages.StandardController.
+- A Visualforce page that uses a custom controller cannot be added to a page layout.
+- Access to web service methods is only checked at the entry point. If access is allowed to the web service, all subsequent code will execute in system mode.
+- The <apex:detail> Visualforce component is used to display the standard detail page of a particular object, as defined by the associated page layout for the object in setup.
+- The <apex:dataList> component is used for iterating over a list of values.
+- Standard Controller is not capable of updating field values on the parent record.
+- The <apex:outputField> component can be used to display individual fields from a record.
+- Instantiating a StandardSetController with a list of more than 10000 records doesn't throw an exception. Instead, the record list is truncated to the allowable limit.
+- Instantiating a StandardSetController using a query locator returning more than 10000 records causes a LimitException to be thrown.
+- View state in a Visualforce page, is automatically created and holds the state of the page such as data that includes the components, field values, and controller state.
+- <script> tag, which is supported in Visualforce, can be used to embed client-side scripts such as js code.
+- Apex classes containing web service methods must be defined as global, which will allow the class to be used anywhere in the org, including Apex code that belongs to other packages.
+- Methods that perform DML statements or web service callouts can use the @future annotation.
+- Merge field syntax can be used to retrieve data from related records. A developer can traverse up to five levels of child-to-parent relationships.
+- When working with Visualforce controllers, primitive types such as strings are passed by value to a controller, while non-primitive types such as lists are passed by reference.
