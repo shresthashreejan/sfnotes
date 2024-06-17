@@ -24,3 +24,19 @@
 - Methods that perform DML statements or web service callouts can use the @future annotation.
 - Merge field syntax can be used to retrieve data from related records. A developer can traverse up to five levels of child-to-parent relationships.
 - When working with Visualforce controllers, primitive types such as strings are passed by value to a controller, while non-primitive types such as lists are passed by reference.
+- StandardSetController is an Apex class that can be used to perform or extend the functionality available in standard Visualforce page list controllers.
+- If a query locator is used for instantiating the StandardSetController to return more than 10000 records, then a LimitException will be thrown. However, instantiating StandardSetController with a list of more than 10000 records will not throw an exception, and instead trims the records down to the limit.
+- A standard controller is designed for working on one primary record at a time.
+- Standard list controllers allow developers to create Visualforce pages that can display or act on a set of records.
+- Standard list controllers can be represented just by adding recordSetVar tag on <apex:page>.
+- Constructors used by Visualforce custom controllers cannot include parameters or an explicit return type.
+- Custom controllers run Visualforce pages in system mode.
+- A custom controller runs in system mode by default, but the 'with sharing' keyword can be used to enforce organization-wide defaults, role hierarchy, and sharing rules. Apex will still have access to all fields and objects.
+- A StandardSetController can be instantiated using either a List<sObject> or a query locator (Database.QueryLocator).
+- Salesforce provides the <apex:map> component to support and display interactive maps on Visualforce pages. The map is capable of displaying multiple markers and comes with viewing controls for zooming and panning. However, the Visualforce mapping components are not available in developer edition orgs.
+- DML statements can't be used in getter or constructor methods, but they can be used in setter methods.
+- Page.existingPageName, where 'existingPageName' represents the name of the Visualforce page, can be used to reference a PageReference instance of a Visualforce page.
+- SOQL for-loops use efficient chunking to reduce the heap size.
+- Saving all results of a SOQL query in variable at once causes all data to be placed in memory instead of it being retrieved in chunks as needed.
+- Using the 'transient' keyword prevents an instance variable from being transmitted as part of the view state of a Visualforce page.
+- Global variables can be used to reference general information about the current user and organization on a page. Global variables must be referenced using Visualforce expression syntax to be evaluated. Example: {!$User.FirstName}.
