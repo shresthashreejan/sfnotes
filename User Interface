@@ -40,3 +40,17 @@
 - Saving all results of a SOQL query in variable at once causes all data to be placed in memory instead of it being retrieved in chunks as needed.
 - Using the 'transient' keyword prevents an instance variable from being transmitted as part of the view state of a Visualforce page.
 - Global variables can be used to reference general information about the current user and organization on a page. Global variables must be referenced using Visualforce expression syntax to be evaluated. Example: {!$User.FirstName}.
+- Transient keywords can be used in serializable APex classes, such as Visualforce custom controllers and controller extensions.
+- Transient keywords can be used in apex classes that implement the batchable or schedulable interface.
+- Transient keywords can be used to declare instance variables that are not persisted since transient variables are not transmitted as part of the view state. For example, after a Visualforce page refreshm only non-transient variables persist on the page since their values can be retrieved from the view state. Transient variables do not exist in the view state and their values are reset.
+- Multiple controller extensions can be defined on a single page by specifying the names of the extensions in a comma-separated list.
+- Lightning Message Service enables communication across the DOM by allowing LWC, Aura components, and Visualforce pages to send receive messages through a lightning message channel, which is a metadata type called LightningMessageChannel.
+- A LWC component can reference the message channel by importing it via the @salesforce/messageChannel scoped module, and then specifying the channel with a "__c" suffix appended to the name of the metadata, although it is not a custom object.
+- A module called "lightning/messageService" is used to access service features such as publishing, subscribing, and unsubscribing from messages on a message channel in a Lightning web component.
+- LWC cannot contain Aura components, but Aura components can contain LWC.
+- The JSENCODE function can be used to automatically insert escape characters before unsafe characters in js code and secure the page from Cross-Site Scripting (XSS) attacks.
+- HTMLENCODE, JSINHTMLENCODE, and URLENCODE are other functions that can be used to escape potentially insecure strings on a page.
+- Content Sniffing Protection is enabled by default and cannot be disabled. It prevents the execution of malicious files, such as JavaScript and CSS, as dynamic content by preventing the browser from inferring the media/MIME type from the document content.
+- Content Security Policy Protection is used to mitigate the risk of cross-site scripting attacks.
+- Cross-Site Request Forgery Protection protects against attacks that force an end user to execute unwanted actions in an application.
+- Lightning web security is used to secure coding practices and is intended to replace lightning locker.
