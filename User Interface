@@ -54,3 +54,6 @@
 - Content Security Policy Protection is used to mitigate the risk of cross-site scripting attacks.
 - Cross-Site Request Forgery Protection protects against attacks that force an end user to execute unwanted actions in an application.
 - Lightning web security is used to secure coding practices and is intended to replace lightning locker.
+- @salesforce/userPermission scoped module can be used to check for he standard permissions assigned to the current user.
+- @salesforce/customPermission scoped module can be used to check for custom permissions.
+- @salesforce/resourceUrl scoped module is used for referencing files contained in static resources.
