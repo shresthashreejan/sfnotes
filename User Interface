@@ -57,3 +57,16 @@
 - @salesforce/userPermission scoped module can be used to check for he standard permissions assigned to the current user.
 - @salesforce/customPermission scoped module can be used to check for custom permissions.
 - @salesforce/resourceUrl scoped module is used for referencing files contained in static resources.
+- Component events support two phases of component event propagation, Bubble and Capture phases. The default phase is the bubble phase.
+- Bubble phase of the component event propagates the event upwards in the containment hierarchy until it reaches the root component.
+- Capture phase of the component event propagates the event in a top down manner. When the source component fires the event, the root component gets to handle the event first and the propagation traverses down the containment hierarchy until it reaches the source component.
+- Aura app can be created to allow the custom lightning application to have its own standalone url.
+- Aura component or LWC can be added to an Aura app, but an Aura app cannot be added to another Aura app.
+- Salesforce provides the 'LightningModal' class for building modal components (in lwc) that can be used to create feature-rich, reusable overlays. <lightning-modal-body> component is required.
+- Lightning message service can be used to allow Visualforce pages, Aura components, and Lightning web components to communicate with one another via a dedicated channel.
+- Apex has access to all objects and fields as it runs in system mode by default.
+- Sharing keywords defined on the Apex class only impact record-level access. To secure object-level and field-level access in SOQL, the WITH SECURITY_ENFORCED or WITH USER_MODE clauses can be used.
+- The firing of init() events starts from the innermost component and then traverses outwards the components higher in the hierarchy.
+- A custom property editor is essentially a lwc that is used as a custom user interface for configuring the properties of the component or element that uses it.
+- To register a custom property editor for a custom screen component, the name of the custom property editor is defined in the configuration file of the custom screen component using the 'configurationEditor' attribute.
+- By default, custom property editors are only able to use manually assigned variables as input values. Exposing a public property called 'automaticOutputVariables' in the custom property editor's js controller enables it to access automatically stored values, such as the return value of a 'Get Records' element.
