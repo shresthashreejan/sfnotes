@@ -70,3 +70,9 @@
 - A custom property editor is essentially a lwc that is used as a custom user interface for configuring the properties of the component or element that uses it.
 - To register a custom property editor for a custom screen component, the name of the custom property editor is defined in the configuration file of the custom screen component using the 'configurationEditor' attribute.
 - By default, custom property editors are only able to use manually assigned variables as input values. Exposing a public property called 'automaticOutputVariables' in the custom property editor's js controller enables it to access automatically stored values, such as the return value of a 'Get Records' element.
+- <event> and <schema> subtags are added within <targetConfig> subtags to fire a custom event that is exposed to other components in a lightning page. <event> defines the name of the event that will be exposed. <schema> defines the structure of the event.
+- StripInaccessible method in apex returns the same list of results for every user but strips inaccessible fields for the running user.
+- Visualforce overrides are supported for new, edit, view, tab, list, and clone actions in lightning console apps. They are not currently supported for delete and custom actions.
+- The behavior of @AuraEnabled apex controllers that don't use 'with sharing' or 'without sharing' defaults to 'with sharing'.
+- Visualforce can be used to create wizards, custom charts, and even generate PDF documents.
+- Static resources that are downloaded from an unstrusted third-party source can be isolated using an iframe on a Visualforce page. This adds an extra layer of security to the page and helps protect the assets. Syntax: $IframeResource.<resource_name>.
