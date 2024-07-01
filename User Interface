@@ -76,3 +76,10 @@
 - The behavior of @AuraEnabled apex controllers that don't use 'with sharing' or 'without sharing' defaults to 'with sharing'.
 - Visualforce can be used to create wizards, custom charts, and even generate PDF documents.
 - Static resources that are downloaded from an unstrusted third-party source can be isolated using an iframe on a Visualforce page. This adds an extra layer of security to the page and helps protect the assets. Syntax: $IframeResource.<resource_name>.
+- A visualforce page should be added to a tab before it can be accessible from the App launcher.
+- Enabling the 'Available for Lightning Experience, Lightning Communities, and the mobile app' option of a visualforce page is only required in Lightning Experience when the page needs to be available in Lightning App Builder.
+- Visualforce page can be used as a Quick Action.
+- It is possible to override standard buttons and links of an object using Visualforce pages.
+- Salesforce has implemented an anti-CSRF token within the lightning platform to prevent CSRF attacks. Every page includes a random string of characters as a hidden form field. Upon the next page load, the application checks the validity of this string of characters and does not execute the command unless the value matches the expected value.
+- A recommendation can only invoke one and the same flow when it is either accepted or rejected by the user.
+- Content Sniffing Protection prevents the execution of malicious files, such as js and css, as dynamic content by preventing the browser from inferring the media/MIME type from the document content. It is enabled by default and cannot be disabled.
