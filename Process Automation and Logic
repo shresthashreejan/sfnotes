@@ -136,3 +136,9 @@
 - 'Uncommitted work pending' error is thrown when a callout is executed after a DML operation in a single transaction. Screen flows can be used to work around this limitation by executing the callout in a new transaction.
 - 'callout=true' attribute in the invocable method annotation is used to make the flow aware that the method contains a callout.
 - Configuring the flow to always start a new transaction would also avoid the 'uncommitted work pending' error.
+- A 'Wait for Conditions' element can be added to the flow to receive platform event messages.
+- The THIS keyword in apex is used to represent the current instance of a class. It can also be used in constructor chaining in a class that contains multiple constructors.
+- Definition modifiers (such as virtual, abstract) are optional.
+- Scheduled delay to a queuable job can be added using the System.enqueueJob() method. The delay value in minutes (min 0, max 10) can be passed to the second parameter of the enqueueJob() method.
+- Platform events only support 'after insert' triggers.
+- If an error origins from a flow that is either inactive, a platform event-triggered flow, from a managed package (and is not a template), or the error was thrown as a result of an Apex test method, then the flow interview is not saved in the org and the notification email does not inclide a link to the flow interview.

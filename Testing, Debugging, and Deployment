@@ -1,0 +1,6 @@
+- Only Developer Edition or Partner Developer Edition environments can create managed packages.
+- Debug logs do not include details related to JavaScript events.
+- Debug log generation can be prevented by setting the DEbug Log Levels to NONE.
+- runAs() ignores user license limits. New users can be created with runAs() even if the organization has no additional user licenses.
+- Test methods can only access custom object or custom setting records that they create.
+- Developer sandbox has a storage limit of 200 MB, whereas Developer Pro sandbox has 1 GB.

@@ -31,3 +31,10 @@
 - Formula fields can reference field values from related parent objects that are up to 10 relationships away.
 - Formula fields cannot reference values from child records.
 - The file field type cannot be converted into other data types.
+- External lookup relationship links child standard, custom, or external object to parent external object using the standard external ID field on the parent external object.
+- Lookup relationship links child standard, custom, or external oject to parent standard or custom object.
+- Master-detail relationship can only be used to link a child custom object to parent standard or custom object.
+- Indirect lookup relationship allows linking a child external object to a parent standard or custom object using a custom unique external ID field on the parent.
+- Objects on the detail side of a master-detail relationship do not have an associated sharing object, and access to the detail records is determined by the master object sharing object and the sharing setting of the relationship.
+- Cross-object formula fields can pull data from records even if the user does not have access to it.
+- Formula fields cannot reference values from child records.

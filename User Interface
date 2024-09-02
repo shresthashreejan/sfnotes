@@ -83,3 +83,8 @@
 - Salesforce has implemented an anti-CSRF token within the lightning platform to prevent CSRF attacks. Every page includes a random string of characters as a hidden form field. Upon the next page load, the application checks the validity of this string of characters and does not execute the command unless the value matches the expected value.
 - A recommendation can only invoke one and the same flow when it is either accepted or rejected by the user.
 - Content Sniffing Protection prevents the execution of malicious files, such as js and css, as dynamic content by preventing the browser from inferring the media/MIME type from the document content. It is enabled by default and cannot be disabled.
+- Dynamic Forms is supported for custom objects, accountss, cases, contacts, leads, and opportunities.
+- Lightning message service can be used to allow Visualforce pages, AUra components, and Lightning web components to communicate with one another via a dedicated Lightning message channel.
+- Application events are used by Aura components for publishing and subscribing to events.
+- IMAGEPROXYURL function allows secure retrieval of external images and prevents unauthorized requests in Visualforce pages.
+- Lightning component framework uses an event-driven architecture.
