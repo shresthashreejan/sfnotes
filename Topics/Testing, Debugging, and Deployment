@@ -4,3 +4,5 @@
 - runAs() ignores user license limits. New users can be created with runAs() even if the organization has no additional user licenses.
 - Test methods can only access custom object or custom setting records that they create.
 - Developer sandbox has a storage limit of 200 MB, whereas Developer Pro sandbox has 1 GB.
+- Change sets and unmanaged packages cannot be used to delete components.
+- Apex test classes and specific test methods can be executed in the Developer Console, Setup, Visual Studio Code, Code Builder, and SOAP API.

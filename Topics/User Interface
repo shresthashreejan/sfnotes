@@ -88,3 +88,4 @@
 - Application events are used by Aura components for publishing and subscribing to events.
 - IMAGEPROXYURL function allows secure retrieval of external images and prevents unauthorized requests in Visualforce pages.
 - Lightning component framework uses an event-driven architecture.
+- Multiple controller extensions can be defined for a single page through a comma-separated list in visualforce pages. Overrides are defined by whichever methods are defined in the leftmost extension.

@@ -38,3 +38,6 @@
 - Objects on the detail side of a master-detail relationship do not have an associated sharing object, and access to the detail records is determined by the master object sharing object and the sharing setting of the relationship.
 - Cross-object formula fields can pull data from records even if the user does not have access to it.
 - Formula fields cannot reference values from child records.
+- Lightning app pages, record pages, home pages, and email application panes can be built using Lightning App Builder.
+- Standard objects are always the master.
+- If an organization uses multiple currencies, the currency of the master record determines the currency of the roll-up summary field.

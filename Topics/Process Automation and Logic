@@ -142,3 +142,4 @@
 - Scheduled delay to a queuable job can be added using the System.enqueueJob() method. The delay value in minutes (min 0, max 10) can be passed to the second parameter of the enqueueJob() method.
 - Platform events only support 'after insert' triggers.
 - If an error origins from a flow that is either inactive, a platform event-triggered flow, from a managed package (and is not a template), or the error was thrown as a result of an Apex test method, then the flow interview is not saved in the org and the notification email does not inclide a link to the flow interview.
+- Custom email handler can be defined to handle inbound emails and perform operations such as creating or updating records based on the email content.
