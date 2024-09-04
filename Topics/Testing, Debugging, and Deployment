@@ -6,3 +6,6 @@
 - Developer sandbox has a storage limit of 200 MB, whereas Developer Pro sandbox has 1 GB.
 - Change sets and unmanaged packages cannot be used to delete components.
 - Apex test classes and specific test methods can be executed in the Developer Console, Setup, Visual Studio Code, Code Builder, and SOAP API.
+- The DevOps Center, which is a managed package that can be installed from Setup, is a centralized platform that can be used to manage test and deployment processes between orgs in a release pipeline. To enab le the tracking of changes made to org metadata, it is integrated with Github and requires a Github account.
+- A Developer Hub is the main org that is used to create and manage scratch orgs via Salesforce CLI commands.
+- A SOQL query on the CronTrigger object can be used to obtain information about scheduled jobs.

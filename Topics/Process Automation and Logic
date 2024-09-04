@@ -143,3 +143,6 @@
 - Platform events only support 'after insert' triggers.
 - If an error origins from a flow that is either inactive, a platform event-triggered flow, from a managed package (and is not a template), or the error was thrown as a result of an Apex test method, then the flow interview is not saved in the org and the notification email does not inclide a link to the flow interview.
 - Custom email handler can be defined to handle inbound emails and perform operations such as creating or updating records based on the email content.
+- The subscription of the trigger to the platform event can be suspended.
+- 'Trigger.new' records can only be edited in 'before' triggers.
+- The isExecuting context variable returns true if any code inside the trigger context is executing.
