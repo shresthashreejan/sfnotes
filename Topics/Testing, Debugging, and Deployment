@@ -9,3 +9,6 @@
 - The DevOps Center, which is a managed package that can be installed from Setup, is a centralized platform that can be used to manage test and deployment processes between orgs in a release pipeline. To enab le the tracking of changes made to org metadata, it is integrated with Github and requires a Github account.
 - A Developer Hub is the main org that is used to create and manage scratch orgs via Salesforce CLI commands.
 - A SOQL query on the CronTrigger object can be used to obtain information about scheduled jobs.
+- Developers can use a Partner Developer Edition org to manage all the source code and a Developer edition org to create a package and distribute it to AppExchange.
+- Developer Pro and Parial Copy sandbox orgs cannot be used to publish apps in AppExchange.
+- The debug log does not include information from actions triggered by time-based workflows.
