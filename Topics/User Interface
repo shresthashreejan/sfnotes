@@ -91,3 +91,5 @@
 - Multiple controller extensions can be defined for a single page through a comma-separated list in visualforce pages. Overrides are defined by whichever methods are defined in the leftmost extension.
 - Constructors used by Visualforce custom controllers cannot include parameters.
 - A StandardSetController can be instantiated using either a list (List<sObject>) or a query locator (Database.QueryLocator). Using other data types will throw an error during compile time.
+- When overriding buttons with a visualforce page, the standard controller for the object must be used.
+- The 'lightningStylesheets' attribute can be set to 'true' in the <apex:page> tag of a Visualforce page to ensure that the page uses Lightning Experience styling when it is viewed in Lightning Experience or the Salesforce mobile app.

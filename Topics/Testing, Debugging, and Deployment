@@ -10,5 +10,7 @@
 - A Developer Hub is the main org that is used to create and manage scratch orgs via Salesforce CLI commands.
 - A SOQL query on the CronTrigger object can be used to obtain information about scheduled jobs.
 - Developers can use a Partner Developer Edition org to manage all the source code and a Developer edition org to create a package and distribute it to AppExchange.
-- Developer Pro and Parial Copy sandbox orgs cannot be used to publish apps in AppExchange.
+- Developer Pro and Partial Copy sandbox orgs cannot be used to publish apps in AppExchange.
 - The debug log does not include information from actions triggered by time-based workflows.
+- Partial Copy sandbox is used for quality assurance tasks such as user acceptance testing, integration testing, and training.
+- Full sandbox is a replica of the production org, which supports performance testing, load testing, and staging.
