@@ -55,3 +55,19 @@
 - Apex class and trigger trace flags do not cause debug logs to be created. They are only created to override existing logging Levels.
 - Visual Studio Code IDE is not capable of creating nor deploying change sets.
 - Trace flags and debug levels can be configured in the Developer Console and Salesforce UI.
+- Log levels available in Apex are: NONE, ERROR, WARN, INFO, DEBUG, FINE, FINER, FINEST.
+- The header section in debug log contains the version of the API used during the transaction and the log category and level used to generate the log.
+- An execution unit is equivalent to a transaction. It contains everything that occurred within the transaction. EXECUTION_STARTED and EXECUTION_FINISHED delimit an execution unit.
+- A code unit is a discrete unit of work within a transaction.
+- Log lines are included inside units of code and indicate which code or rules are being executed.
+- executeAnonymous always executes using the permissions of the current user.
+- To include newly generated debug logs of other users in the Developer COnsole, the 'Debug > Show My Current Logs Only' option can be disabled.
+- Debug logs can track a flow's usage of limited resources in a transaction. To display this information in the debug logs, the Workflow log level should be set to FINER.
+- The Debug Details in Flow Builder can also show governor limit consumption information along with variables used, actions performed, and results of a flow.
+- The Log Inspector is a context-sensitive execution viewer that shows the source of an operation, what triggered the operation, and what occurred afterward. It can be used to inspect debug logs that include database events, Apex processing, workflow, and validation logic.
+- The Log Inspector can contain any of the following panels: Stack Tree, Execution Stack, Execution Log, Source, Variables & Execution Overview.
+- The ‘Apex Jobs’ page in Setup can be accessed to view ongoing and completed Apex jobs. This page can be used to determine the status of each asynchronous job and whether an error has been encountered.
+- The ‘Scheduled Jobs' page in Setup is used to pause, delete, and manage jobs that have been scheduled to run at a particular date and time.
+- The ‘Apex Flex Queue page contains asynchronous jobs that are explicitly added using the FlexQueue class. Apex jobs added to this queue are not scheduled; they are executed as soon as system resources become available.
+- View state is an encrypted data that is passed between Visualforce page requests.
+- The checkpoints tab in the Developer Console provides the following information: Namespace, Class, Line, and Time (DateTime).
