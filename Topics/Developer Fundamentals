@@ -41,3 +41,11 @@
 - Lightning app pages, record pages, home pages, and email application panes can be built using Lightning App Builder.
 - Standard objects are always the master.
 - If an organization uses multiple currencies, the currency of the master record determines the currency of the roll-up summary field.
+- Objects on the detail side of a master-detail relationship do not have a sharing object.
+- The getLabel() method of the DescribeSObjectResult class returns the object's label.
+- In order to publish event messages using SOAP API, the create() call is used instead of a POST request.
+- EMP connector is used to subscribe to platform event messages.
+- getGlobalDescribe() method can be used to obtain metadata information about all the sObjects in an organization.
+- describeSObjects() method is used to obtain metadata, such as the object properties and field list, of a single sObject or multiple sObjects.
+- CometD is a communication framework that uses long-polling to retrieve messages across systems.
+- EMP (Enterprise Messaging Platform) connector serves as a wrapper to simplify the implementation of CometD in a system such as Salesforce.
