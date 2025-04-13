@@ -49,3 +49,14 @@
 - describeSObjects() method is used to obtain metadata, such as the object properties and field list, of a single sObject or multiple sObjects.
 - CometD is a communication framework that uses long-polling to retrieve messages across systems.
 - EMP (Enterprise Messaging Platform) connector serves as a wrapper to simplify the implementation of CometD in a system such as Salesforce.
+- An indirect lookup relationship field can be used to link a child external object to a parent standard or custom salesforce object, if the external object does not include a column that identifies related salesforce records by their 18-character IDs.
+- A lookup relationship can be used to link a child external object to a parent standard or custom salesforce object, if the external object includes a column that identifies related salesforce records.
+- An external lookup relationship links a child standard, custom, or external object to a parent external object.
+- There is no relationship field called 'Internal Lookup'.
+- Process builder cannot be used to query records.
+- getDescribe() method is used to obtain information on the field.
+- getPicklistValues() method is used to retrieve the picklist values.
+- The runtime engine enforces limits on how long a SOQL quer can run, how many records can be returned in a query, and the maximum amount of CPU time a transaction can take.
+- There is no maximum execution time for DML statements.
+- There is a limit on the total number of DML statements that can be executed in an apex transaction.
+- The edition and the number of user licenses in the org determine the storage limit, not the governor limits.
