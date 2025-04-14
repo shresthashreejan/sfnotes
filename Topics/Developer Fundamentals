@@ -56,7 +56,12 @@
 - Process builder cannot be used to query records.
 - getDescribe() method is used to obtain information on the field.
 - getPicklistValues() method is used to retrieve the picklist values.
-- The runtime engine enforces limits on how long a SOQL quer can run, how many records can be returned in a query, and the maximum amount of CPU time a transaction can take.
+- The runtime engine enforces limits on how long a SOQL query can run, how many records can be returned in a query, and the maximum amount of CPU time a transaction can take.
 - There is no maximum execution time for DML statements.
 - There is a limit on the total number of DML statements that can be executed in an apex transaction.
 - The edition and the number of user licenses in the org determine the storage limit, not the governor limits.
+- The isAccessible() method of the DescribeFieldResult class returns true if the current user can see the field.
+- The isFormulaTreatNullNumberAsZero() method of the DescribeFieldResult class returns true if null is treated as zero in a formula field, and false otherwise.
+- Schema builder cannot be used to export or import schema definitions.
+- Lookup and master-detail relationships are not available on the User object. The User object can only be linked with itself, which is possible by using a hierarchical relationship.
+- A queue requires an owner field, which is not available on child records in a master-detail relationships.
