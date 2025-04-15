@@ -93,3 +93,8 @@
 - A StandardSetController can be instantiated using either a list (List<sObject>) or a query locator (Database.QueryLocator). Using other data types will throw an error during compile time.
 - When overriding buttons with a visualforce page, the standard controller for the object must be used.
 - The 'lightningStylesheets' attribute can be set to 'true' in the <apex:page> tag of a Visualforce page to ensure that the page uses Lightning Experience styling when it is viewed in Lightning Experience or the Salesforce mobile app.
+- Standard List Controllers allow developers to create Visualforce pages that can display or act on a set of records.
+- Standard List Controllers can be represented just by adding recordSetVar tag on <apex:page>.
+- <apex:outputField> component can be used to display individual fields from a record.
+- To load a Visualforce page on a page layout, the standard controller of the associated object must be defined on the Visualforce page.
+- If the Name field of an Account object is populated when peforming an insert operation, a business account will be created. If the Last Name field is populated, a person account will be created.
