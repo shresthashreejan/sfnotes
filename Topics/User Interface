@@ -98,3 +98,33 @@
 - <apex:outputField> component can be used to display individual fields from a record.
 - To load a Visualforce page on a page layout, the standard controller of the associated object must be defined on the Visualforce page.
 - If the Name field of an Account object is populated when peforming an insert operation, a business account will be created. If the Last Name field is populated, a person account will be created.
+- The <apex:detail> vf component is used to display the standard detail page of a particular object.
+- The transient keyword can be used in serializable apex classes, such as visualforce custom controllers and controller extensions. It can also be used in apex classes that implement the Batchable or Schedulable interface.
+- The transient keyword can be used to declare instance variables that are not persisted since transient variables are not transmitted as part of the view state.
+- To use a standard list controller, the standardController and recordSetVar attributes are defined on the Visualforce page component.
+- A 'set' method should be used to pass data from a vf page to its apex controller.
+- A 'get' method should be used to pass data from an apex controller to a vf page.
+- The name of the getter method without the 'get' prefix should be used to display results from a getter method.
+- Unlike standard controllers, custom controllers run in system mode by default, unless the 'with sharing' keywords are specified.
+- Access to web service methods is only checked at the entry point. If access is allowed to the web service, all subsequent code will execute in system mode.
+- When overriding buttons with a vf oage, the standard controller for the object on which the button appears must be used.
+- DML statements can't be used in getter or constructor methods, but they can be used in setter methods.
+- A vf page that uses custom controller cannot be added to a page layout.
+- <apex:pageLayout> vf component does not exist.
+- Controller extension must be used in order to execute custom operations using apex on a vf page with standard controller.
+- Global variables can be used to reference general information about the current user and organization on a page. For example, {!User.FirstName}
+- getSelected() function requires a list of records that are selected.
+- getRecord() function returns the sObject that represents the changes to the selected records. It's a prototype object that can be used for performing a mass update since changes to the prototype object applies to all records in the selection.
+- getRecords() function returns a list of all records on the page.
+- getListViewOptions() function specifies what list view options are available to the user.
+- The supported action methods in a standard controller are Save, QuickSave, Edit, Delete, Cancel. and List.
+- Select or Export action is not a valid standard controller action.
+- Instantiating a StandardSetController with a list of more than 10000 records doesn't throw an exception. Instead, the record list is truncated to the allowable limit.
+- Instantiating a StandardSetController using a query locator returning more than 10000 records causes a LimitException to be thrown.
+- Apex classes containing web service methods must be defined as global.
+- A vf component called <apex:table> or <apex:listTable> does not exist.
+- The <apex:relatedList> tag will automatically generate a list of related reocrds by specifying the relationship name in its list attribute. For example: <apex:relatedList list='Contacts' />
+- Standard list controllers support record pagination capabilities.
+- <apex:include> tag is used for inserting a full vf page into another page.
+- When working with Visualforce, or Apex methods, in particular, primitive types such as Strings are passed by value to a controller, while non-primitive types such as Lists are passed by reference.
+- A StandardSetController can be instantiated using either a List<sObject> or a query locator (Database.QueryLocator).
