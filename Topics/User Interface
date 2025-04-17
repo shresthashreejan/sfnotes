@@ -128,3 +128,14 @@
 - <apex:include> tag is used for inserting a full vf page into another page.
 - When working with Visualforce, or Apex methods, in particular, primitive types such as Strings are passed by value to a controller, while non-primitive types such as Lists are passed by reference.
 - A StandardSetController can be instantiated using either a List<sObject> or a query locator (Database.QueryLocator).
+- The 'with sharing' keyword directs the platform to use the security sharing permissions of the user currently logged in, rather than granting full access to all records.
+- Within the Lightning platform, Salesforce has implemented an anti-SCRF token to prevent CSRF attacks. Every page includes a random string of characters as a hidden form field. Upon the next page load, the application checks the validity of this string of characters and does not execute the command unless the value matches the expected value.
+- A security token is used by end users when accessing salesforce from outside a trusted IP range.
+- To navigate to an object's tab, or the home page of the object, the 'type' property of NavigationMixin should be set as 'standard__objectPage'.
+- 'standard__navItemPage' page type is used to navigate to a custom tab.
+- 'standard__webPage' is used to navigate to an internal or external URL.
+- 'standard__recordPage' is used to view or edit a specific record by specifying a record Id in the 'attributes' property.
+- An SVG file should be added to the component bundle, in order to use a custom icon to represent a custom Aura component in Lightning app builder or experience builder.
+- <lightningMessageFields> tag containing fieldName and description properties is used to specify a message payload field in the configuration file of a Lightning Message Service channel.
+- The following are valid methods of preventing SOQL injection attacks. Static queries with bind variables, String.escapeSingleQuotes(), Typecasting, Replacing characters, Allowlisting.
+- Lightning Platform ESAPI and JSENCODE() are mthods of preventing cross-site scripting (XSS) attacks.
