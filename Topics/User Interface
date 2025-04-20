@@ -139,3 +139,45 @@
 - <lightningMessageFields> tag containing fieldName and description properties is used to specify a message payload field in the configuration file of a Lightning Message Service channel.
 - The following are valid methods of preventing SOQL injection attacks. Static queries with bind variables, String.escapeSingleQuotes(), Typecasting, Replacing characters, Allowlisting.
 - Lightning Platform ESAPI and JSENCODE() are mthods of preventing cross-site scripting (XSS) attacks.
+- Vf page can be added to the navigation bar.
+- A recommendation can only invoke one flow when it is either accepted or rejected.
+- 'Launch Flow on Rejection' setting can be enabled for the Next Best Action component in Lightning App Builder to invoke flow on rejection.
+- Lightning Message Service enables communication across the DOM by allowing LWC, Aura components, and VF pages to send and receive messages through a Lightning message channel, which is a metadata type called LightningMessageChannel.
+- 'lightning/messageService module is used to access service features such as publishing, subscribing, and unsubscribing from messages on a message channel in a LWC.
+- Salesforce recommends using flow builder to build a strategy using the recommendation strategy flow type for building recommendations. However, strategy builders can also be used.
+- The design resource can be used to expose a component attribute in Lightning App Builder where its value can be managed.
+- The renderer resource is used for manipulating DOM elements.
+- The behavior of an @AuraEnabled Apex controller that does not use a sharing keyword defaults to 'with sharing'.
+- The 'lightningStylesheets' attribute can be set to 'true' in the <apex:page> tag of a vf page to ensure that the page uses Lightning Experience styling.
+- Custom Aura design tokens can be used to share css in LWC. A token is a name-value pair that is included in an <aura:token> component, and stores values such as margins, font sizes, families, and color hex values. They can be created in a token bundle and used in the components by using the standard VAR() function in css.
+- Parameters can be passed in the url via the state object where the data type of the property must be a string data type.
+- To enable a LWC to be addressable via a url, the lightning__UrlAddressable target is added to its configuration file.
+- Vf page can be added to a home page in lightning experience, it is not able to create or customize a home page in lightning experience.
+- A vf page can be embedded in a page layout if the standard controller of the page matches the object.
+- While the @salesforce/userPermission scoped module can be used to check for the standard permissions assigned to the current user, the @salesforce/customPermission scoped module can be used to check for custom permissions.
+- Salesforce allows running a specific DML operation in user or system mode. To explicitly set the running context of a DML operation using the Database class, the 'AccessLevel' class is used. For example: Database.update(cases, true, AccessLevel.USER_MODE).
+- Example for DML statements: update as system cases.
+- Access modifiers in apex are not used to define sharing settings.
+- Data can be passed to custom events in lwc by using the 'detail' property.
+- A <ltng:require> tag is used in the .cmp and .app markup to include a resource in aura component.
+- The 'scripts' attribute can be used to load a set of resources using a comma-separated list.
+- The 'init' event handler should not be used to access the scripts since they load asynchronously.
+- Content sniffing protection is enabled by default and cannot be disabled in vf pages.
+- Valid methods of the Schema.DescribeSObjectResult class are isAccessible(), isCreateable(), isUpdateable(), and isDeletable().
+- Valid methods of the Schema.DescribeFieldResult class are isAccessible(), isCreateable(), and isUpdateable().
+- Client-side controller class that extends the 'LightningModal' class can be used for building modal components.
+- To prevent SOQL injection attacks in dynamic queries, bind variables should be used.
+- To embed a screen flow in an aura component, the <lightning:flow> component can be used.
+- Custom property editors can be created for custom screen components and invocable actions in Flow Builder.
+- A custom property editor is essentially a lwc that is used as a custom ui for configuring the properties of the component or element that uses it.
+- To register a custom property editor for a custom screen component, the name of the custom property editor is defined in the conf file of the custom screen component using the 'configurationEditor' attribute.
+- By default, custom property editors are only able to use manually assigned variables as input values. Exposing a public property called 'automaticOutputVariables' in the custom property editor's js controller enables it to access automatically stored values, such as the return value of a 'Get Records' element.
+- Aura apps cannot be added to Lightning experience. It also cannot be added to another aura app.
+- The $ContentAsset global value provider is used for referencing images, stylesheets, and js files in a lightning component.
+- To fire a custom event that is exposed to other components in a lightning page, the <event> and <schema> subtags are added within two <targetConfig> subtags.
+- Application events are used by aura components for publishing and subscribing to events.
+- For salesforce classic, it is possible to override a standard button with a custom vf page.
+- Dynamic forms is supported for custom objects, accounts, person accounts, cases, contacts, leads, and opportunities.
+- To launch a lwc in a window or modal from a record page, 'ScreenAction' actionType property is defined.
+- 'Action' actionType is used to launch lwc as a headless action.
+- The firing of init() events starts from the innermost component and then traverses outwards the components higher in the hierarchy.
