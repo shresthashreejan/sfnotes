@@ -71,3 +71,33 @@
 - The ‘Apex Flex Queue page contains asynchronous jobs that are explicitly added using the FlexQueue class. Apex jobs added to this queue are not scheduled; they are executed as soon as system resources become available.
 - View state is an encrypted data that is passed between Visualforce page requests.
 - The checkpoints tab in the Developer Console provides the following information: Namespace, Class, Line, and Time (DateTime).
+- Anonymous code is always run in user mode, which enforces the record sharing and object and field permissions of the user executing the code.
+- 'variable_current' in the debug log contains all of the record's current field values, 'variable_old' contains all the field values before the record was updated.
+- When a process fails, salesforce sends a detailed error email to the system administrator who last modified the process.
+- The 'Event Monitoring Settings' in setup is used to monitor user activity in salesforce.
+- A SOQL query on the CronTrigger object can be used to obtain information about scheduled jobs.
+- Debug logs does not include information from actions triggered by time-based workflows.
+- Platform Integration User shows up in audit fields in the following cases: When an Einstein bot creates a case, When Einstein writes prediction data to records that it is evaluating, When data is synchronized using the Salesforce Integration Cloud.
+- A trace flag can be set on the Platform Integration User to track certain business processes run by internal applications.
+- Automated processes associated with the process builder, workflow rules, and assignment rules cannot be traced using a debug log by setting up a trace flag on the Platform Integration User.
+- Change sets are cloud based and do not require files to be downloaded locally.
+- Tooling API can be used for fine-grained access to an org's metadata. Its main use cases include source control integration, continuous integration, and deployment of Apex classes and triggers.
+- Selecting 'Run specified tests' when deploying a change set requires 75% code coverage for each Apex component that is included in the change set, and not 75% overall code coverage for the org.
+- Full sandboxes are technically intended to be used for performance testing, load testing, and staging.
+- In package development, every customization is managed as a single, separately-deployable unit and all changes are tracked in source control.
+- Components such as Account Teams, Case Team Roles, Currency Exchange Rates, Calendars, etc cannot be retrieved or deployed with metadata API, and changes to them must be made manually in the salesforce org.
+- Developers can use a Partner Developer Edition org to manage all the source code and a Developer edition org to create a package and distribute it to AppExchange or Trialforce.
+- Trialforce is a platform that can be used to deliver free trial apps to customers.
+- Developer Pro and Partial Copy sandbox orgs cannot be used to publish apps in AppExchange.
+- The Partial Copy sandbox is used mainly for testing and training.
+- In Cahnge set development model, sandbox orgs are used for development and testing.
+- Change sets are also used to deploy changes from one org to another.
+- The DevOps Center, which is a managed package that can be installed from Setup, is a centralized platform that can be used to manage test and deployment processes between orgs in a release pipeline.
+- Change Data Capture is a feature that is used to automatically publish changes made to salesforce records in real time for data synchronization with external apps.
+- Change sets are not available in Developer Edition orgs.
+- Visual Studio Code can be used to deploy code to production.
+- A Partial Copy Sandbox can be refreshed with a sample of production data every 5 days and can store up to 5GB of object records.
+- A Full Copy Sandbox can only be refreshed every 29 days.
+- A Trial Production Org is a trial version of the production org and comes with sample data and features based on the org edition.
+- Change sets and unmanaged packages cannot be used to delete components.
+- Only Developer Edition or Partner Developer Edition environments can create managed packages.
