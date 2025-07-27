@@ -1,0 +1,20 @@
+1. load original values trigger.old
+2. load new values trigger.new
+3. standard system validation
+4. before flows
+5. before triggers
+6. system validation and custom validation rules
+7. duplicate rules
+8. saves to db but no commit
+9. after triggers
+10. assignment rules
+11. auto response rules
+12. workflow / approval rule evaluation
+13. escalation rules
+14. process builder evaluation
+15. after flows and entitlement rules
+16. roll up summary
+17. criteria based sharing
+18. commits to db
+19. post commit logic (send email, outbound messages, time-based workflow actions, async apex, future methods)
+20. approval and workflow time based field updates only flows
